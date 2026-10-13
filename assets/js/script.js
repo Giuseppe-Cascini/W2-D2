@@ -28,7 +28,7 @@ console.log(`${persona.nome} ${persona.cognome}, ${persona.eta}, vive a ${person
 /* SCRIVI QUI LA TUA RISPOSTA */
 persona.email = "mariorossi@gmail.com"
 delete persona.eta
-console.log(persona)
+console.log(persona);
 
 
 /* ESERCIZIO 3 — Oggetto annidato
@@ -44,7 +44,7 @@ const utente = {
         cap: 20121,
     }
 }
-console.log(utente.indirizzo.cap)
+console.log(utente.indirizzo.cap);
 
 /* ESERCIZIO 4 — Bracket dinamica
    Sull'oggetto 'persona', variabile chiave = 'nome'.
@@ -52,6 +52,7 @@ console.log(utente.indirizzo.cap)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log(persona["nome"]);
 
 /* ESERCIZIO 5 — Numero più grande
    Tre numeri a, b, c.
