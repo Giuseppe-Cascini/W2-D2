@@ -100,6 +100,7 @@ console.log(`Totale carrello: ${totale} - Spedizione: ${spedizione}€ - Totale 
 
 let tot = 51
 let prezzo = tot >= 50 ? 0 : 9.90
+console.log(prezzo)
 
 
 /* ESERCIZIO 7 — typeof check
