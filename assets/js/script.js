@@ -84,6 +84,20 @@ else
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let totale;
+totale = 51;
+let spedizione;
+let totaleFinale;
+if (totale >= 50) {
+    console.log("spedizione gratuita");
+    spedizione = 0;
+    totaleFinale = totale + spedizione;
+} else {
+    spedizione = 9.90;
+    totaleFinale = totale + spedizione;
+}
+console.log(`Totale carrello: ${totale} - Spedizione: ${spedizione}€ - Totale finale: ${totaleFinale} €`);
+
 
 /* ESERCIZIO 7 — typeof check
    Crea un array con 3 valori diversi (es. [42, 'ciao', true]).
