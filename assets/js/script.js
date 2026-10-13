@@ -12,7 +12,13 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+const persona = {
+    nome: "Mario",
+    cognome: "Rossi",
+    eta: 25,
+    citta: "Roma"
+}
+console.log(`${persona.nome} ${persona.cognome}, ${persona.eta}, vive a ${persona.citta}`);
 
 /* ESERCIZIO 2 — Aggiungi e rimuovi
    Sull'oggetto 'persona': aggiungi 'email', poi rimuovi 'eta'.
