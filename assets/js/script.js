@@ -99,10 +99,10 @@ if (totale >= 50) {
 }
 console.log(`Totale carrello: ${totale} - Spedizione: ${spedizione}€ - Totale finale: ${totaleFinale} €`);
 
-let tot = 34
-let prezzoSped = tot >= 50 ? 0 : 9.90
-let totCom = tot + prezzoSped
-console.log("Spedizione gratuita")
+let tot = 34;
+let prezzoSped = tot >= 50 ? 0 : 9.90;
+let totCom = tot + prezzoSped;
+console.log(prezzoSped===0 ?"Spedizione gratuita" :"Costo di spedizione");
 console.log(`Totale carrello: ${tot} - Spedizione: ${prezzoSped}€ - Totale finale: ${totCom} €`);
 
 
@@ -112,12 +112,25 @@ console.log(`Totale carrello: ${tot} - Spedizione: ${prezzoSped}€ - Totale fin
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const arr= [42, 'ciao', true];
+for (let i=0; i<arr.length; i++) {
+    if(typeof(arr[i])=== "number") {
+        console.log(`${(arr[i])} è un numero`);
+    } else {
+        console.log(`${(arr[i])} non è un numero`);
+    }
+}
+
 /* ESERCIZIO 8 — Array dei numeri
    Array vuoto. Aggiungi 1..5 con push. Aggiungi 0 all'inizio con unshift.
    Stampa array e length.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const arr1 = [];
+arr1.push(1,2,3,4,5);
+arr1.unshift(0);
+console.log(arr1, arr1.length);
 
 /* ESERCIZIO 9 — Carrello con splice
    Array ['Penna', 'Quaderno', 'Zaino', 'Astuccio'].
@@ -126,6 +139,16 @@ console.log(`Totale carrello: ${tot} - Spedizione: ${prezzoSped}€ - Totale fin
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const carrello = ["Penna", "Quaderno", "Zaino", "Astuccio"];
+carrello.splice(1, 1, "Diario");
+console.log(carrello);
+
+//altra versione
+const carr = ["Penna", "Quaderno", "Zaino", "Astuccio"];
+carr.splice(1, 1,);
+console.log(carr);
+carr.splice(1, 0, "Diario");
+console.log(carr);
 
 /* ESERCIZIO 10 — Cerca un articolo
    Array prodotti = ['Penna', 'Quaderno', 'Zaino'].
@@ -135,7 +158,7 @@ console.log(`Totale carrello: ${tot} - Spedizione: ${prezzoSped}€ - Totale fin
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+const prodotti = ["Penna", "Quaderno", "Zaino"]
 /* ESERCIZIO 11 — Lista utenti
    Array utenti di 3 oggetti { nome, eta }.
    Con un for, stampa ogni utente: 'Mario (25 anni)'.
