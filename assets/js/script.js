@@ -98,6 +98,9 @@ if (totale >= 50) {
 }
 console.log(`Totale carrello: ${totale} - Spedizione: ${spedizione}€ - Totale finale: ${totaleFinale} €`);
 
+let tot = 51
+let prezzo = tot >= 50 ? 0 : 9.90
+
 
 /* ESERCIZIO 7 — typeof check
    Crea un array con 3 valori diversi (es. [42, 'ciao', true]).
