@@ -98,9 +98,11 @@ if (totale >= 50) {
 }
 console.log(`Totale carrello: ${totale} - Spedizione: ${spedizione}€ - Totale finale: ${totaleFinale} €`);
 
-let tot = 51
-let prezzo = tot >= 50 ? 0 : 9.90
-console.log(prezzo)
+let tot = 34
+let prezzoSped = tot >= 50 ? 0 : 9.90
+let totCom = tot + prezzoSped
+console.log("Spedizione gratuita")
+console.log(`Totale carrello: ${tot} - Spedizione: ${prezzoSped}€ - Totale finale: ${totCom} €`);
 
 
 /* ESERCIZIO 7 — typeof check
