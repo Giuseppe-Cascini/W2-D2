@@ -158,7 +158,17 @@ console.log(carr);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const prodotti = ["Penna", "Quaderno", "Zaino"]
+const prodotti = ["Penna", "Quaderno", "Zaino"];
+let cercaZaino = prodotti.includes("Zaino");
+console.log(`Zaino è in carrello: ${cercaZaino}`)
+if ( cercaZaino) {
+    let posZaino = prodotti.indexOf("Zaino");
+    console.log(posZaino);
+} else {
+    console.log("Non in carrello");
+}
+   
+
 /* ESERCIZIO 11 — Lista utenti
    Array utenti di 3 oggetti { nome, eta }.
    Con un for, stampa ogni utente: 'Mario (25 anni)'.
